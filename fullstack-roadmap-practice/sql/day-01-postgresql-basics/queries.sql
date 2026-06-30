@@ -15,7 +15,7 @@ ORDER BY salary_expectation DESC;
 
 SELECT *
 FROM job_applications
-ORDER BY id
+ORDER BY id ASC
 LIMIT 3;
 
 SELECT *
@@ -35,6 +35,5 @@ ORDER BY created_at DESC;
 
 SELECT *
 FROM job_applications
+ORDER BY id ASC
 LIMIT 5;
-
-
