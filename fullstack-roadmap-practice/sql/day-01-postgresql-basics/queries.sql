@@ -15,6 +15,7 @@ ORDER BY salary_expectation DESC;
 
 SELECT *
 FROM job_applications
+ORDER BY id
 LIMIT 3;
 
 SELECT *
@@ -23,14 +24,14 @@ WHERE status = 'INTERVIEW';
 
 SELECT *
 FROM job_applications
-WHERE salary_expectation <= 2000;
+WHERE salary_expectation < 2000;
 
 SELECT company_name, position, status
 FROM job_applications;
 
 SELECT *
 FROM job_applications
-ORDER BY created_at;
+ORDER BY created_at DESC;
 
 SELECT *
 FROM job_applications
