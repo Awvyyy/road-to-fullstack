@@ -2,7 +2,7 @@
 "AND" means, that both rules must be correct, while "OR" means, that at least 1 rule must be completed.
 
 2. When do we have to use "IN" instead of "OR"? <br>
-When we have more, than 2 parameters.
+When we compare 1 column with multiple possible values.
 
 3. What does "%Java%" means in "LIKE"? <br>
 "%Java%" means, that before or after word "Java" can be symbols/letters/text.
@@ -11,10 +11,10 @@ When we have more, than 2 parameters.
 In the first case we can't have symbols/letters/text before word Java, in the second case we can.
 
 5. What does "IS NULL" does? <br>
-IS NULL compares data, if field in column is NULL, then this field will be returned.
+IS NULL checks whether a column has no value.
 
 6. Why cant we write "= NULL"? <br>
-Because we cant compare nothing.
+NULL is unknown or missing. 
 
 7. Why can't we guarantee order without "ORDER BY"? <br>
-Because the db will return data, as it stored on the hard drive.
+The database can return rows in any order, depending on indexes, internal optimizations & etc...

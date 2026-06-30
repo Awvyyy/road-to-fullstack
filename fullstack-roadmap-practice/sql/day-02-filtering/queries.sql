@@ -12,7 +12,7 @@ WHERE salary_expectation <= 1800;
 
 SELECT *
 FROM job_applications
-WHERE status != 'REJECTED';
+WHERE status <> 'REJECTED';
 
 SELECT *
 FROM job_applications
@@ -34,7 +34,7 @@ WHERE position LIKE '%Java%';
 
 SELECT *
 FROM job_applications
-WHERE position LIKE 'S%';
+WHERE company_name LIKE 'S%';
 
 SELECT *
 FROM job_applications
@@ -47,5 +47,5 @@ WHERE salary_expectation >= 1800
 
 SELECT *
 FROM job_applications
-WHERE position LIKE ('%Developer%')
- AND status != 'REJECTED';
+WHERE position LIKE '%Developer%'
+  AND status <> 'REJECTED';
