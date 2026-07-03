@@ -5,6 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="08e003ca-b4a0-4e57-86bb-bcafeed41d8c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/fullstack-roadmap-practice/sql/day-04-constraints/answers.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fullstack-roadmap-practice/sql/day-04-constraints/broken-inserts.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fullstack-roadmap-practice/sql/day-04-constraints/inserts.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fullstack-roadmap-practice/sql/day-04-constraints/queries.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fullstack-roadmap-practice/sql/day-04-constraints/schema.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e9b21eab-28ac-486d-9319-dbdf8fd78488.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/e9b21eab-28ac-486d-9319-dbdf8fd78488.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/data_source_mapping.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/data_source_mapping.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -45,29 +52,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "onboarding.tips.debug.path": "C:/Users/awvyy/IdeaProjects/untitled1/src/main/java/org/example/Main.java",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/awvyy/IdeaProjects/untitled1/src/main/java/org/example/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "postgresql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="untitled1" />
@@ -98,7 +105,8 @@
       <updated>1782841738050</updated>
       <workItem from="1782841739271" duration="7698000" />
       <workItem from="1782923734063" duration="19000" />
-      <workItem from="1783003195598" duration="1817000" />
+      <workItem from="1783003195598" duration="3439000" />
+      <workItem from="1783082192975" duration="2548000" />
     </task>
     <servers />
   </component>
