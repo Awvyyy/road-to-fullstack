@@ -5,12 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="08e003ca-b4a0-4e57-86bb-bcafeed41d8c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/fullstack-roadmap-practice/sql/day-04-constraints/answers.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fullstack-roadmap-practice/sql/day-04-constraints/broken-inserts.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fullstack-roadmap-practice/sql/day-04-constraints/inserts.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fullstack-roadmap-practice/sql/day-04-constraints/queries.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fullstack-roadmap-practice/sql/day-04-constraints/schema.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e9b21eab-28ac-486d-9319-dbdf8fd78488.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/e9b21eab-28ac-486d-9319-dbdf8fd78488.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fullstack-roadmap-practice/sql/day-05-aggregation/answers.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fullstack-roadmap-practice/sql/day-05-aggregation/queries.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/data_source_mapping.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/data_source_mapping.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
@@ -106,7 +102,8 @@
       <workItem from="1782841739271" duration="7698000" />
       <workItem from="1782923734063" duration="19000" />
       <workItem from="1783003195598" duration="3439000" />
-      <workItem from="1783082192975" duration="2548000" />
+      <workItem from="1783082192975" duration="3359000" />
+      <workItem from="1783161452922" duration="1739000" />
     </task>
     <servers />
   </component>
