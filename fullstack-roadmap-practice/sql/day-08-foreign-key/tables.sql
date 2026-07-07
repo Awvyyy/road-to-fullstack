@@ -2,14 +2,14 @@ CREATE TABLE users (
     id BIGSERIAL PRIMARY KEY,
     email VARCHAR(200) UNIQUE NOT NULL CHECK (email LIKE('%@%')),
     password_hash VARCHAR(200) NOT NULL,
-    created_at TIMESTAMPTZ DEFAULT current_timestamp
+    created_at TIMESTAMPTZ DEFAULT CURRENT_TIMESTAMP
 );
 
 CREATE TABLE companies (
     id BIGSERIAL PRIMARY KEY,
     company_name VARCHAR(100) NOT NULL,
     website TEXT,
-    created_at TIMESTAMPTZ DEFAULT current_timestamp
+    created_at TIMESTAMPTZ DEFAULT CURRENT_TIMESTAMP
 );
 
 CREATE TABLE job_applications (
@@ -19,5 +19,6 @@ CREATE TABLE job_applications (
     position VARCHAR(100) NOT NULL,
     status VARCHAR(30) NOT NULL CHECK ( status IN ('APPLIED', 'SAVED', 'INTERVIEW', 'REJECTED')),
     salary_expectation INTEGER,
-    applied_at TIMESTAMPTZ NOT NULL DEFAULT CURRENT_TIMESTAMP
+    applied_at TIMESTAMPTZ NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    created_at TIMESTAMPTZ NOT NULL DEFAULT CURRENT_TIMESTAMP
 );

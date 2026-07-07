@@ -11,8 +11,5 @@ INSERT INTO job_applications (user_id, company_id, position, status, salary_expe
 VALUES (1, 1, 'Software Developer', 'APPLIED', 3500),
        (2, 2, 'Junior Java Developer', 'SAVED', 2400),
        (1, 2, 'Java Developer', 'INTERVIEW', 2150),
-       (2,1, 'Senior Java/Spring Develioer', 'SAVED', 4500),
+       (2,1, 'Senior Java/Spring Developer', 'SAVED', 4500),
        (2, 2, 'VP Java Developer', 'REJECTED', 7500);
-
-INSERT INTO job_applications (user_id, company_id, position, status, applied_at)
-VALUES (999, 1, 'Java Developer', 'APPLIED', CURRENT_DATE);

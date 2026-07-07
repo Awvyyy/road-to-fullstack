@@ -5,14 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="08e003ca-b4a0-4e57-86bb-bcafeed41d8c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/fullstack-roadmap-practice/sql/day-08-foreign-key/answers.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fullstack-roadmap-practice/sql/day-08-foreign-key/inserts.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fullstack-roadmap-practice/sql/day-08-foreign-key/queries.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fullstack-roadmap-practice/sql/day-08-foreign-key/tables.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e9b21eab-28ac-486d-9319-dbdf8fd78488.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/e9b21eab-28ac-486d-9319-dbdf8fd78488.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e9b21eab-28ac-486d-9319-dbdf8fd78488/storage_v2/_src_/database/defaultdb.f1Z3pg/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/e9b21eab-28ac-486d-9319-dbdf8fd78488/storage_v2/_src_/database/defaultdb.f1Z3pg/schema/public.abK9xQ.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fullstack-roadmap-practice/sql/day-08-foreign-key/broken_insert.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fullstack-roadmap-practice/sql/day-09-inner-join/answers.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fullstack-roadmap-practice/sql/day-09-inner-join/queries.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/data_source_mapping.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/data_source_mapping.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fullstack-roadmap-practice/sql/day-08-foreign-key/inserts.sql" beforeDir="false" afterPath="$PROJECT_DIR$/fullstack-roadmap-practice/sql/day-08-foreign-key/inserts.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fullstack-roadmap-practice/sql/day-08-foreign-key/tables.sql" beforeDir="false" afterPath="$PROJECT_DIR$/fullstack-roadmap-practice/sql/day-08-foreign-key/tables.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,6 +118,7 @@
       <workItem from="1783353602820" duration="1775000" />
       <workItem from="1783374430603" duration="1240000" />
       <workItem from="1783385838493" duration="2057000" />
+      <workItem from="1783445982090" duration="4198000" />
     </task>
     <servers />
   </component>
