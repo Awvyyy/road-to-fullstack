@@ -5,9 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="08e003ca-b4a0-4e57-86bb-bcafeed41d8c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/fullstack-roadmap-practice/sql/day-07-review/answers.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fullstack-roadmap-practice/sql/day-07-review/queries.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fullstack-roadmap-practice/sql/day-08-foreign-key/answers.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fullstack-roadmap-practice/sql/day-08-foreign-key/inserts.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fullstack-roadmap-practice/sql/day-08-foreign-key/queries.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fullstack-roadmap-practice/sql/day-08-foreign-key/tables.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e9b21eab-28ac-486d-9319-dbdf8fd78488.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/e9b21eab-28ac-486d-9319-dbdf8fd78488.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e9b21eab-28ac-486d-9319-dbdf8fd78488/storage_v2/_src_/database/defaultdb.f1Z3pg/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/e9b21eab-28ac-486d-9319-dbdf8fd78488/storage_v2/_src_/database/defaultdb.f1Z3pg/schema/public.abK9xQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/data_source_mapping.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/data_source_mapping.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
@@ -112,7 +115,10 @@
       <workItem from="1783082192975" duration="3359000" />
       <workItem from="1783161452922" duration="5415000" />
       <workItem from="1783170313682" duration="117000" />
-      <workItem from="1783284951388" duration="1236000" />
+      <workItem from="1783284951388" duration="1478000" />
+      <workItem from="1783353602820" duration="1775000" />
+      <workItem from="1783374430603" duration="1240000" />
+      <workItem from="1783385838493" duration="2057000" />
     </task>
     <servers />
   </component>
