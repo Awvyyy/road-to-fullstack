@@ -16,7 +16,7 @@
 16464||-9223372036854775808|T|G
 16464||16424|T|G
 16464||16462|T|G</Grants>
-      <IntrospectionStateNumber>77121</IntrospectionStateNumber>
+      <IntrospectionStateNumber>93767</IntrospectionStateNumber>
       <ServerVersion>17.10</ServerVersion>
       <StartupTime>1782840494</StartupTime>
       <TimeZones>true ACDT
@@ -1413,7 +1413,7 @@ true posixrules
 14308||10|C|G
 14308||-9223372036854775808|U|G
 14308||10|U|G</Grants>
-      <IntrospectionStateNumber>77121</IntrospectionStateNumber>
+      <IntrospectionStateNumber>93767</IntrospectionStateNumber>
       <ObjectId>16464</ObjectId>
       <OwnerName>avnadmin</OwnerName>
     </database>
@@ -4902,265 +4902,396 @@ pg_stat_monitor.pgsm_track=none</Config>
       <AutoIntrospectionLevel>3</AutoIntrospectionLevel>
       <Comment>standard public schema</Comment>
       <Current>1</Current>
-      <LastIntrospectionL1Xid>77121</LastIntrospectionL1Xid>
-      <LastIntrospectionL2Xid>77121</LastIntrospectionL2Xid>
-      <LastIntrospectionL3Xid>77121</LastIntrospectionL3Xid>
+      <LastIntrospectionL1Xid>93767</LastIntrospectionL1Xid>
+      <LastIntrospectionL2Xid>93767</LastIntrospectionL2Xid>
+      <LastIntrospectionL3Xid>93767</LastIntrospectionL3Xid>
       <LastIntrospectionLevel>3</LastIntrospectionLevel>
-      <LastIntrospectionLocalTimestamp>2026-07-09.17:06:56</LastIntrospectionLocalTimestamp>
+      <LastIntrospectionLocalTimestamp>2026-07-11.16:03:52</LastIntrospectionLocalTimestamp>
       <LastIntrospectionVersion>260210</LastIntrospectionVersion>
       <ObjectId>2200</ObjectId>
       <StateNumber>531</StateNumber>
       <OwnerName>pg_database_owner</OwnerName>
     </schema>
-    <sequence id="274" parent="273" name="companies_id_seq">
+    <sequence id="274" parent="273" name="application_notes_id_seq">
       <DetailsLevel>2</DetailsLevel>
-      <ObjectId>16570</ObjectId>
+      <ObjectId>16642</ObjectId>
       <SequenceIdentity>1</SequenceIdentity>
       <StartValue>1</StartValue>
-      <StateNumber>54504</StateNumber>
+      <StateNumber>93766</StateNumber>
       <StoredType>bigint|0s</StoredType>
       <OwnerName>avnadmin</OwnerName>
     </sequence>
-    <sequence id="275" parent="273" name="job_applications_id_seq">
+    <sequence id="275" parent="273" name="companies_id_seq">
       <DetailsLevel>2</DetailsLevel>
-      <ObjectId>16580</ObjectId>
+      <ObjectId>16612</ObjectId>
       <SequenceIdentity>1</SequenceIdentity>
       <StartValue>1</StartValue>
-      <StateNumber>54505</StateNumber>
+      <StateNumber>93764</StateNumber>
       <StoredType>bigint|0s</StoredType>
       <OwnerName>avnadmin</OwnerName>
     </sequence>
-    <sequence id="276" parent="273" name="users_id_seq">
+    <sequence id="276" parent="273" name="job_applications_id_seq">
       <DetailsLevel>2</DetailsLevel>
-      <ObjectId>16559</ObjectId>
+      <ObjectId>16622</ObjectId>
       <SequenceIdentity>1</SequenceIdentity>
       <StartValue>1</StartValue>
-      <StateNumber>54503</StateNumber>
+      <StateNumber>93765</StateNumber>
       <StoredType>bigint|0s</StoredType>
       <OwnerName>avnadmin</OwnerName>
     </sequence>
-    <table id="277" parent="273" name="companies">
+    <sequence id="277" parent="273" name="users_id_seq">
       <DetailsLevel>2</DetailsLevel>
-      <ObjectId>16571</ObjectId>
-      <StateNumber>54505</StateNumber>
+      <ObjectId>16600</ObjectId>
+      <SequenceIdentity>1</SequenceIdentity>
+      <StartValue>1</StartValue>
+      <StateNumber>93763</StateNumber>
+      <StoredType>bigint|0s</StoredType>
+      <OwnerName>avnadmin</OwnerName>
+    </sequence>
+    <table id="278" parent="273" name="application_notes">
+      <DetailsLevel>2</DetailsLevel>
+      <ObjectId>16643</ObjectId>
+      <StateNumber>93766</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>avnadmin</OwnerName>
     </table>
-    <table id="278" parent="273" name="job_applications">
+    <table id="279" parent="273" name="companies">
       <DetailsLevel>2</DetailsLevel>
-      <ObjectId>16581</ObjectId>
-      <StateNumber>54505</StateNumber>
+      <ObjectId>16613</ObjectId>
+      <StateNumber>93765</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>avnadmin</OwnerName>
     </table>
-    <table id="279" parent="273" name="users">
+    <table id="280" parent="273" name="job_applications">
       <DetailsLevel>2</DetailsLevel>
-      <ObjectId>16560</ObjectId>
-      <StateNumber>54505</StateNumber>
+      <ObjectId>16623</ObjectId>
+      <StateNumber>93765</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>avnadmin</OwnerName>
     </table>
-    <column id="280" parent="277" name="id">
-      <DefaultExpression>nextval(&apos;companies_id_seq&apos;::regclass)</DefaultExpression>
+    <table id="281" parent="273" name="users">
+      <DetailsLevel>2</DetailsLevel>
+      <ObjectId>16601</ObjectId>
+      <StateNumber>93765</StateNumber>
+      <AccessMethodId>2</AccessMethodId>
+      <OwnerName>avnadmin</OwnerName>
+    </table>
+    <check id="282" parent="278" name="application_notes_content_check">
+      <ColNames>content</ColNames>
+      <ObjectId>16647</ObjectId>
+      <Predicate>char_length(TRIM(BOTH FROM content)) &gt; 0</Predicate>
+      <StateNumber>93766</StateNumber>
+    </check>
+    <column id="283" parent="278" name="id">
+      <GeneratedKind>identity-always</GeneratedKind>
       <NotNull>1</NotNull>
       <Position>1</Position>
-      <StateNumber>54504</StateNumber>
+      <StateNumber>93766</StateNumber>
       <StoredType>bigint|0s</StoredType>
-      <SequenceId>16570</SequenceId>
+      <SequenceId>16642</SequenceId>
       <TypeId>20</TypeId>
     </column>
-    <column id="281" parent="277" name="company_name">
+    <column id="284" parent="278" name="application_id">
       <NotNull>1</NotNull>
       <Position>2</Position>
-      <StateNumber>54504</StateNumber>
-      <StoredType>varchar(30)|0s</StoredType>
-      <TypeId>1043</TypeId>
+      <StateNumber>93766</StateNumber>
+      <StoredType>bigint|0s</StoredType>
+      <TypeId>20</TypeId>
     </column>
-    <column id="282" parent="277" name="website">
+    <column id="285" parent="278" name="content">
+      <NotNull>1</NotNull>
       <Position>3</Position>
-      <StateNumber>54504</StateNumber>
+      <StateNumber>93766</StateNumber>
       <StoredType>text|0s</StoredType>
       <TypeId>25</TypeId>
     </column>
-    <column id="283" parent="277" name="created_at">
+    <column id="286" parent="278" name="created_at">
       <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
+      <NotNull>1</NotNull>
       <Position>4</Position>
-      <StateNumber>54504</StateNumber>
+      <StateNumber>93766</StateNumber>
       <StoredType>timestamp with time zone|0s</StoredType>
       <TypeId>1184</TypeId>
     </column>
-    <index id="284" parent="277" name="companies_pkey">
+    <column id="287" parent="278" name="updated_at">
+      <Position>5</Position>
+      <StateNumber>93766</StateNumber>
+      <StoredType>timestamp with time zone|0s</StoredType>
+      <TypeId>1184</TypeId>
+    </column>
+    <foreign-key id="288" parent="278" name="application_notes_application_id_fkey">
+      <ColNames>application_id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>16652</ObjectId>
+      <OnDelete>cascade</OnDelete>
+      <StateNumber>93766</StateNumber>
+      <RefKeyColPositions>1</RefKeyColPositions>
+      <RefTableId>16623</RefTableId>
+    </foreign-key>
+    <index id="289" parent="278" name="application_notes_pkey">
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>16578</ObjectId>
+      <ObjectId>16650</ObjectId>
       <Primary>1</Primary>
-      <StateNumber>54504</StateNumber>
+      <StateNumber>93766</StateNumber>
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
-    <key id="285" parent="277" name="companies_pkey">
+    <key id="290" parent="278" name="application_notes_pkey">
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>16579</ObjectId>
+      <ObjectId>16651</ObjectId>
       <Primary>1</Primary>
-      <StateNumber>54504</StateNumber>
-      <UnderlyingIndexId>16578</UnderlyingIndexId>
+      <StateNumber>93766</StateNumber>
+      <UnderlyingIndexId>16650</UnderlyingIndexId>
     </key>
-    <check id="286" parent="278" name="job_applications_status_check">
-      <ColNames>status</ColNames>
-      <ObjectId>16586</ObjectId>
-      <Predicate>(status)::text = ANY ((ARRAY[&apos;APPLIED&apos;::character varying, &apos;SAVED&apos;::character varying, &apos;INTERVIEW&apos;::character varying, &apos;REJECTED&apos;::character varying])::text[])</Predicate>
-      <StateNumber>54505</StateNumber>
+    <check id="291" parent="279" name="companies_company_name_check">
+      <ColNames>company_name</ColNames>
+      <ObjectId>16617</ObjectId>
+      <Predicate>char_length(TRIM(BOTH FROM company_name)) &gt; 0</Predicate>
+      <StateNumber>93764</StateNumber>
     </check>
-    <column id="287" parent="278" name="id">
-      <DefaultExpression>nextval(&apos;job_applications_id_seq&apos;::regclass)</DefaultExpression>
+    <column id="292" parent="279" name="id">
+      <GeneratedKind>identity-always</GeneratedKind>
       <NotNull>1</NotNull>
       <Position>1</Position>
-      <StateNumber>54505</StateNumber>
+      <StateNumber>93764</StateNumber>
       <StoredType>bigint|0s</StoredType>
-      <SequenceId>16580</SequenceId>
+      <SequenceId>16612</SequenceId>
       <TypeId>20</TypeId>
     </column>
-    <column id="288" parent="278" name="user_id">
+    <column id="293" parent="279" name="company_name">
       <NotNull>1</NotNull>
       <Position>2</Position>
-      <StateNumber>54505</StateNumber>
-      <StoredType>bigint|0s</StoredType>
-      <TypeId>20</TypeId>
-    </column>
-    <column id="289" parent="278" name="company_id">
-      <NotNull>1</NotNull>
-      <Position>3</Position>
-      <StateNumber>54505</StateNumber>
-      <StoredType>bigint|0s</StoredType>
-      <TypeId>20</TypeId>
-    </column>
-    <column id="290" parent="278" name="position">
-      <NotNull>1</NotNull>
-      <Position>4</Position>
-      <StateNumber>54505</StateNumber>
+      <StateNumber>93764</StateNumber>
       <StoredType>varchar(100)|0s</StoredType>
       <TypeId>1043</TypeId>
     </column>
-    <column id="291" parent="278" name="status">
-      <NotNull>1</NotNull>
-      <Position>5</Position>
-      <StateNumber>54505</StateNumber>
-      <StoredType>varchar(30)|0s</StoredType>
-      <TypeId>1043</TypeId>
-    </column>
-    <column id="292" parent="278" name="salary_expectation">
-      <Position>6</Position>
-      <StateNumber>54505</StateNumber>
-      <StoredType>integer|0s</StoredType>
-      <TypeId>23</TypeId>
-    </column>
-    <column id="293" parent="278" name="applied_at">
-      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
-      <NotNull>1</NotNull>
-      <Position>7</Position>
-      <StateNumber>54505</StateNumber>
-      <StoredType>timestamp|0s</StoredType>
-      <TypeId>1114</TypeId>
-    </column>
-    <foreign-key id="294" parent="278" name="job_applications_user_id_fkey">
-      <ColNames>user_id</ColNames>
-      <NameSurrogate>1</NameSurrogate>
-      <ObjectId>16589</ObjectId>
-      <StateNumber>54505</StateNumber>
-      <RefKeyColPositions>1</RefKeyColPositions>
-      <RefTableId>16560</RefTableId>
-    </foreign-key>
-    <foreign-key id="295" parent="278" name="job_applications_company_id_fkey">
-      <ColNames>company_id</ColNames>
-      <NameSurrogate>1</NameSurrogate>
-      <ObjectId>16594</ObjectId>
-      <StateNumber>54505</StateNumber>
-      <RefKeyColPositions>1</RefKeyColPositions>
-      <RefTableId>16571</RefTableId>
-    </foreign-key>
-    <index id="296" parent="278" name="job_applications_pkey">
-      <ColNames>id</ColNames>
-      <NameSurrogate>1</NameSurrogate>
-      <ObjectId>16587</ObjectId>
-      <Primary>1</Primary>
-      <StateNumber>54505</StateNumber>
-      <Unique>1</Unique>
-      <AccessMethodId>403</AccessMethodId>
-    </index>
-    <key id="297" parent="278" name="job_applications_pkey">
-      <NameSurrogate>1</NameSurrogate>
-      <ObjectId>16588</ObjectId>
-      <Primary>1</Primary>
-      <StateNumber>54505</StateNumber>
-      <UnderlyingIndexId>16587</UnderlyingIndexId>
-    </key>
-    <check id="298" parent="279" name="users_email_check">
-      <ColNames>email</ColNames>
-      <ObjectId>16565</ObjectId>
-      <Predicate>(email)::text ~~ &apos;%@%&apos;::text</Predicate>
-      <StateNumber>54503</StateNumber>
-    </check>
-    <column id="299" parent="279" name="id">
-      <DefaultExpression>nextval(&apos;users_id_seq&apos;::regclass)</DefaultExpression>
-      <NotNull>1</NotNull>
-      <Position>1</Position>
-      <StateNumber>54503</StateNumber>
-      <StoredType>bigint|0s</StoredType>
-      <SequenceId>16559</SequenceId>
-      <TypeId>20</TypeId>
-    </column>
-    <column id="300" parent="279" name="email">
-      <NotNull>1</NotNull>
-      <Position>2</Position>
-      <StateNumber>54503</StateNumber>
-      <StoredType>varchar(200)|0s</StoredType>
-      <TypeId>1043</TypeId>
-    </column>
-    <column id="301" parent="279" name="password_hash">
+    <column id="294" parent="279" name="website">
       <Position>3</Position>
-      <StateNumber>54503</StateNumber>
-      <StoredType>varchar(200)|0s</StoredType>
-      <TypeId>1043</TypeId>
+      <StateNumber>93764</StateNumber>
+      <StoredType>text|0s</StoredType>
+      <TypeId>25</TypeId>
     </column>
-    <column id="302" parent="279" name="created_at">
+    <column id="295" parent="279" name="created_at">
       <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
+      <NotNull>1</NotNull>
       <Position>4</Position>
-      <StateNumber>54503</StateNumber>
+      <StateNumber>93764</StateNumber>
       <StoredType>timestamp with time zone|0s</StoredType>
       <TypeId>1184</TypeId>
     </column>
-    <index id="303" parent="279" name="users_pkey">
+    <index id="296" parent="279" name="companies_pkey">
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>16566</ObjectId>
+      <ObjectId>16620</ObjectId>
       <Primary>1</Primary>
-      <StateNumber>54503</StateNumber>
+      <StateNumber>93764</StateNumber>
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
-    <index id="304" parent="279" name="users_email_key">
+    <key id="297" parent="279" name="companies_pkey">
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>16621</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>93764</StateNumber>
+      <UnderlyingIndexId>16620</UnderlyingIndexId>
+    </key>
+    <check id="298" parent="280" name="job_applications_status_check">
+      <ColNames>status</ColNames>
+      <ObjectId>16628</ObjectId>
+      <Predicate>(status)::text = ANY ((ARRAY[&apos;APPLIED&apos;::character varying, &apos;SAVED&apos;::character varying, &apos;INTERVIEW&apos;::character varying, &apos;OFFER&apos;::character varying, &apos;REJECTED&apos;::character varying])::text[])</Predicate>
+      <StateNumber>93765</StateNumber>
+    </check>
+    <check id="299" parent="280" name="job_applications_position_check">
+      <ColNames>position</ColNames>
+      <ObjectId>16627</ObjectId>
+      <Predicate>char_length(TRIM(BOTH FROM &quot;position&quot;)) &gt; 0</Predicate>
+      <StateNumber>93765</StateNumber>
+    </check>
+    <check id="300" parent="280" name="job_applications_salary_expectation_check">
+      <ColNames>salary_expectation</ColNames>
+      <ObjectId>16629</ObjectId>
+      <Predicate>salary_expectation &gt; (0)::numeric</Predicate>
+      <StateNumber>93765</StateNumber>
+    </check>
+    <column id="301" parent="280" name="id">
+      <GeneratedKind>identity-always</GeneratedKind>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StateNumber>93765</StateNumber>
+      <StoredType>bigint|0s</StoredType>
+      <SequenceId>16622</SequenceId>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="302" parent="280" name="user_id">
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+      <StateNumber>93765</StateNumber>
+      <StoredType>bigint|0s</StoredType>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="303" parent="280" name="company_id">
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+      <StateNumber>93765</StateNumber>
+      <StoredType>bigint|0s</StoredType>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="304" parent="280" name="position">
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+      <StateNumber>93765</StateNumber>
+      <StoredType>varchar(100)|0s</StoredType>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="305" parent="280" name="status">
+      <NotNull>1</NotNull>
+      <Position>5</Position>
+      <StateNumber>93765</StateNumber>
+      <StoredType>varchar(30)|0s</StoredType>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="306" parent="280" name="salary_expectation">
+      <Position>6</Position>
+      <StateNumber>93765</StateNumber>
+      <StoredType>numeric(19,2 digit)|0s</StoredType>
+      <TypeId>1700</TypeId>
+    </column>
+    <column id="307" parent="280" name="applied_at">
+      <Position>7</Position>
+      <StateNumber>93765</StateNumber>
+      <StoredType>timestamp with time zone|0s</StoredType>
+      <TypeId>1184</TypeId>
+    </column>
+    <column id="308" parent="280" name="created_at">
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>8</Position>
+      <StateNumber>93765</StateNumber>
+      <StoredType>timestamp with time zone|0s</StoredType>
+      <TypeId>1184</TypeId>
+    </column>
+    <column id="309" parent="280" name="updated_at">
+      <Position>9</Position>
+      <StateNumber>93765</StateNumber>
+      <StoredType>timestamp with time zone|0s</StoredType>
+      <TypeId>1184</TypeId>
+    </column>
+    <foreign-key id="310" parent="280" name="job_applications_user_id_fkey">
+      <ColNames>user_id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>16632</ObjectId>
+      <OnDelete>cascade</OnDelete>
+      <StateNumber>93765</StateNumber>
+      <RefKeyColPositions>1</RefKeyColPositions>
+      <RefTableId>16601</RefTableId>
+    </foreign-key>
+    <foreign-key id="311" parent="280" name="job_applications_company_id_fkey">
+      <ColNames>company_id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>16637</ObjectId>
+      <OnDelete>restrict</OnDelete>
+      <StateNumber>93765</StateNumber>
+      <RefKeyColPositions>1</RefKeyColPositions>
+      <RefTableId>16613</RefTableId>
+    </foreign-key>
+    <index id="312" parent="280" name="job_applications_pkey">
+      <ColNames>id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>16630</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>93765</StateNumber>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+    </index>
+    <key id="313" parent="280" name="job_applications_pkey">
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>16631</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>93765</StateNumber>
+      <UnderlyingIndexId>16630</UnderlyingIndexId>
+    </key>
+    <check id="314" parent="281" name="users_email_check">
+      <ColNames>email</ColNames>
+      <ObjectId>16605</ObjectId>
+      <Predicate>((email)::text ~~ &apos;%@%&apos;::text) AND ((email)::text ~~ &apos;%.%&apos;::text)</Predicate>
+      <StateNumber>93763</StateNumber>
+    </check>
+    <check id="315" parent="281" name="users_email_check1">
+      <ColNames>email</ColNames>
+      <ObjectId>16606</ObjectId>
+      <Predicate>char_length(TRIM(BOTH FROM email)) &gt; 0</Predicate>
+      <StateNumber>93763</StateNumber>
+    </check>
+    <check id="316" parent="281" name="users_password_hash_check">
+      <ColNames>password_hash</ColNames>
+      <ObjectId>16607</ObjectId>
+      <Predicate>char_length(TRIM(BOTH FROM password_hash)) &gt; 0</Predicate>
+      <StateNumber>93763</StateNumber>
+    </check>
+    <column id="317" parent="281" name="id">
+      <GeneratedKind>identity-always</GeneratedKind>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StateNumber>93763</StateNumber>
+      <StoredType>bigint|0s</StoredType>
+      <SequenceId>16600</SequenceId>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="318" parent="281" name="email">
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+      <StateNumber>93763</StateNumber>
+      <StoredType>varchar(200)|0s</StoredType>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="319" parent="281" name="password_hash">
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+      <StateNumber>93763</StateNumber>
+      <StoredType>varchar(200)|0s</StoredType>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="320" parent="281" name="created_at">
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+      <StateNumber>93763</StateNumber>
+      <StoredType>timestamp with time zone|0s</StoredType>
+      <TypeId>1184</TypeId>
+    </column>
+    <index id="321" parent="281" name="users_pkey">
+      <ColNames>id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>16608</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>93763</StateNumber>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+    </index>
+    <index id="322" parent="281" name="users_email_key">
       <ColNames>email</ColNames>
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>16568</ObjectId>
-      <StateNumber>54503</StateNumber>
+      <ObjectId>16610</ObjectId>
+      <StateNumber>93763</StateNumber>
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
       <CollationNames>default</CollationNames>
       <CollationIds>100</CollationIds>
       <CollationParentNames>pg_catalog</CollationParentNames>
     </index>
-    <key id="305" parent="279" name="users_pkey">
+    <key id="323" parent="281" name="users_pkey">
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>16567</ObjectId>
+      <ObjectId>16609</ObjectId>
       <Primary>1</Primary>
-      <StateNumber>54503</StateNumber>
-      <UnderlyingIndexId>16566</UnderlyingIndexId>
+      <StateNumber>93763</StateNumber>
+      <UnderlyingIndexId>16608</UnderlyingIndexId>
     </key>
-    <key id="306" parent="279" name="users_email_key">
+    <key id="324" parent="281" name="users_email_key">
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>16569</ObjectId>
-      <StateNumber>54503</StateNumber>
-      <UnderlyingIndexId>16568</UnderlyingIndexId>
+      <ObjectId>16611</ObjectId>
+      <StateNumber>93763</StateNumber>
+      <UnderlyingIndexId>16610</UnderlyingIndexId>
     </key>
   </database-model>
 </dataSource>

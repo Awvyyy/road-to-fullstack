@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="08e003ca-b4a0-4e57-86bb-bcafeed41d8c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/fullstack-roadmap-practice/sql/day-14-final-review/answers.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fullstack-roadmap-practice/sql/day-14-final-review/queries.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fullstack-roadmap-practice/sql/day-15-schema-design/answers.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fullstack-roadmap-practice/sql/day-15-schema-design/schema.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fullstack-roadmap-practice/sql/day-15-schema-design/tests.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e9b21eab-28ac-486d-9319-dbdf8fd78488.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/e9b21eab-28ac-486d-9319-dbdf8fd78488.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e9b21eab-28ac-486d-9319-dbdf8fd78488/storage_v2/_src_/database/defaultdb.f1Z3pg/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/e9b21eab-28ac-486d-9319-dbdf8fd78488/storage_v2/_src_/database/defaultdb.f1Z3pg/schema/public.abK9xQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/data_source_mapping.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/data_source_mapping.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
@@ -120,7 +123,9 @@
       <workItem from="1783445982090" duration="4979000" />
       <workItem from="1783511079905" duration="6204000" />
       <workItem from="1783598457830" duration="7461000" />
-      <workItem from="1783615570479" duration="10110000" />
+      <workItem from="1783615570479" duration="10335000" />
+      <workItem from="1783780626160" duration="4798000" />
+      <workItem from="1783799913199" duration="494000" />
     </task>
     <servers />
   </component>

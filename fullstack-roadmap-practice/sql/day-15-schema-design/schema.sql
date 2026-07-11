@@ -1,0 +1,33 @@
+CREATE TABLE users (
+    id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+    email VARCHAR(200) UNIQUE NOT NULL CHECK (email LIKE('%@%') AND email LIKE ('%.%') AND (CHAR_LENGTH(TRIM(email)) > 0)),
+    password_hash VARCHAR(200) NOT NULL CHECK(char_length(TRIM(password_hash)) > 0),
+    created_at TIMESTAMPTZ DEFAULT CURRENT_TIMESTAMP NOT NULL
+    );
+
+CREATE TABLE companies (
+    id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+    company_name VARCHAR(100) NOT NULL CHECK (CHAR_LENGTH(TRIM(company_name)) > 0),
+    website TEXT,
+    created_at TIMESTAMPTZ DEFAULT CURRENT_TIMESTAMP NOT NULL
+);
+
+CREATE TABLE job_applications (
+    id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+    user_id BIGINT REFERENCES users(id) ON DELETE CASCADE NOT NULL,
+    company_id BIGINT REFERENCES companies (id) ON DELETE RESTRICT NOT NULL,
+    position VARCHAR(100) NOT NULL CHECK (CHAR_LENGTH(TRIM(position)) > 0),
+    status VARCHAR(30) NOT NULL CHECK ( status IN ('APPLIED', 'SAVED', 'INTERVIEW', 'OFFER', 'REJECTED')),
+    salary_expectation NUMERIC(19,2) CHECK (salary_expectation > 0),
+    applied_at TIMESTAMPTZ,
+    created_at TIMESTAMPTZ DEFAULT CURRENT_TIMESTAMP NOT NULL,
+    updated_at TIMESTAMPTZ
+);
+
+CREATE TABLE application_notes (
+    id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+    application_id BIGINT REFERENCES job_applications(id) ON DELETE CASCADE NOT NULL,
+    content TEXT NOT NULL CHECK (CHAR_LENGTH(TRIM(content)) > 0),
+    created_at TIMESTAMPTZ DEFAULT CURRENT_TIMESTAMP NOT NULL,
+    updated_at TIMESTAMPTZ
+);
